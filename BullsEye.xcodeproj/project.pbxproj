@@ -161,6 +161,7 @@
 				TargetAttributes = {
 					F97CD4AB1A35DEE200D57EA9 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4PPGZNVG8G;
 					};
 					F97CD4C01A35DEE200D57EA9 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -341,6 +342,7 @@
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -351,6 +353,7 @@
 				INFOPLIST_FILE = BullsEye/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
