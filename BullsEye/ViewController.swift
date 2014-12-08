@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        startNewRound()
+        startNewGame()
     }
 
     override func didReceiveMemoryWarning() {
@@ -33,9 +33,6 @@ class ViewController: UIViewController {
         
         let difference = abs(targetValue - currentValue)
         var points = 100 - difference
-        
-        
-        
         var title = "Bullseye?"
         if difference == 0 {
             title = "BULLSEYE! You get 100 bonus points!"
@@ -60,21 +57,22 @@ class ViewController: UIViewController {
         round += 1
         
         let message = "You said: \(currentValue)" + "\nYou were trying for: \(targetValue)" + "\nYou were \(difference) off" + "\nYou scored \(points) points"
-
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
-        
-        let action = UIAlertAction(title: "OK", style: .Default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .Default, handler: {
+            action in
+            self.startNewRound()
+            self.updateLabels()
+        })
         
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
         
-        startNewRound()
+       
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
-        println("The value of the slider is now: \(lroundf(slider.value))")
         currentValue = lroundf(slider.value)
     }
     
@@ -83,13 +81,22 @@ class ViewController: UIViewController {
         currentValue = 50
         slider.value = Float(currentValue)
         updateLabels()
-        println(targetValue)
     }
     
     func updateLabels() {
         targetLabel.text = String(targetValue)
         scoreLabel.text = String(score)
         roundLabel.text = String(round)
+    }
+    
+    func startNewGame() {
+        score = 0
+        round = 0
+        startNewRound()
+    }
+    
+    @IBAction func startOver() {
+        startNewGame()
     }
 }
 
