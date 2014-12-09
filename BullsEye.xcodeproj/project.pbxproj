@@ -14,6 +14,7 @@
 		F97CD4BC1A35DEE200D57EA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97CD4BA1A35DEE200D57EA9 /* LaunchScreen.xib */; };
 		F97CD4C81A35DEE200D57EA9 /* BullsEyeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CD4C71A35DEE200D57EA9 /* BullsEyeTests.swift */; };
 		F97CD4D21A36315000D57EA9 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97CD4D11A36315000D57EA9 /* AboutViewController.swift */; };
+		F97CD4D41A366BFC00D57EA9 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = F97CD4D31A366BFC00D57EA9 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		F97CD4C61A35DEE200D57EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F97CD4C71A35DEE200D57EA9 /* BullsEyeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullsEyeTests.swift; sourceTree = "<group>"; };
 		F97CD4D11A36315000D57EA9 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		F97CD4D31A366BFC00D57EA9 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		F97CD4AE1A35DEE200D57EA9 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				F97CD4D31A366BFC00D57EA9 /* BullsEye.html */,
 				F97CD4B11A35DEE200D57EA9 /* AppDelegate.swift */,
 				F97CD4B31A35DEE200D57EA9 /* ViewController.swift */,
 				F97CD4D11A36315000D57EA9 /* AboutViewController.swift */,
@@ -197,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F97CD4B71A35DEE200D57EA9 /* Main.storyboard in Resources */,
+				F97CD4D41A366BFC00D57EA9 /* BullsEye.html in Resources */,
 				F97CD4BC1A35DEE200D57EA9 /* LaunchScreen.xib in Resources */,
 				F97CD4B91A35DEE200D57EA9 /* Images.xcassets in Resources */,
 			);
