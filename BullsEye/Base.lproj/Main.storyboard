@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Put the Bull's Eye as close as you can to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-Lt-9df">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Put the Bull's Eye as close as you can to:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-Lt-9df">
                                 <rect key="frame" x="110" y="28" width="348" height="21"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="16"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -28,35 +28,28 @@
                                 <color key="shadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToH-ST-xVy">
-                                <rect key="frame" x="429" y="28" width="29" height="21"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1z-6O-v5f">
-                                <rect key="frame" x="102" y="138" width="10" height="19"/>
+                                <rect key="frame" x="55" y="138" width="10" height="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chr-Mv-saq">
-                                <rect key="frame" x="456" y="138" width="29" height="19"/>
+                                <rect key="frame" x="419" y="140" width="29" height="19"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="14"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aST-Q7-i9y">
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="aST-Q7-i9y">
                                 <rect key="frame" x="118" y="133" width="332" height="31"/>
                                 <connections>
                                     <action selector="sliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="1mu-q7-qTS"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LJ0-iX-MJS">
-                                <rect key="frame" x="149" y="285" width="55" height="21"/>
+                                <rect key="frame" x="85" y="286" width="55" height="21"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -64,7 +57,7 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Round:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDl-jn-vz0">
-                                <rect key="frame" x="350" y="286" width="59" height="21"/>
+                                <rect key="frame" x="314" y="286" width="59" height="21"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -72,21 +65,21 @@
                                 <size key="shadowOffset" width="0.0" height="1"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9999999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiE-IM-jqq">
-                                <rect key="frame" x="212" y="284" width="84" height="24"/>
+                                <rect key="frame" x="142" y="285" width="84" height="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d6L-KZ-tiO">
-                                <rect key="frame" x="417" y="284" width="36" height="24"/>
+                                <rect key="frame" x="375" y="285" width="36" height="24"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ugp-UV-RJd">
-                                <rect key="frame" x="492" y="280" width="32" height="32.5"/>
+                                <rect key="frame" x="408" y="280" width="32" height="32.5"/>
                                 <state key="normal" image="InfoButton" backgroundImage="SmallButton">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -94,18 +87,8 @@
                                     <segue destination="ldo-Kn-Hq3" kind="modal" modalTransitionStyle="flipHorizontal" id="9I3-U1-BUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-kQ-bO8">
-                                <rect key="frame" x="64" y="280" width="32" height="32"/>
-                                <size key="titleShadowOffset" width="32" height="32"/>
-                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rrg-Bi-1ua"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-1t-kTY">
-                                <rect key="frame" x="234" y="199" width="100" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-1t-kTY">
+                                <rect key="frame" x="234" y="239" width="100" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
@@ -116,10 +99,30 @@
                                     <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNe-Kc-Ms6"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-kQ-bO8">
+                                <rect key="frame" x="33" y="281" width="32" height="32"/>
+                                <size key="titleShadowOffset" width="32" height="32"/>
+                                <state key="normal" image="StartOverIcon" backgroundImage="SmallButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rrg-Bi-1ua"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToH-ST-xVy">
+                                <rect key="frame" x="408" y="28" width="29" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="aST-Q7-i9y" secondAttribute="centerX" id="72y-aj-lig"/>
                             <constraint firstAttribute="trailing" secondItem="XNc-mG-KdJ" secondAttribute="trailing" id="8ff-lp-x5M"/>
+                            <constraint firstAttribute="centerX" secondItem="F0G-1t-kTY" secondAttribute="centerX" id="Npk-30-HGg"/>
+                            <constraint firstAttribute="centerX" secondItem="AM5-Lt-9df" secondAttribute="centerX" id="caT-ct-2zL"/>
                             <constraint firstItem="XNc-mG-KdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nQy-jG-XWJ"/>
                         </constraints>
                     </view>
@@ -151,12 +154,15 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-TO-bMl">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-rE-xmg">
+                            <webView contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-rE-xmg">
                                 <rect key="frame" x="66" y="15" width="437" height="235"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPn-tH-HXK">
-                                <rect key="frame" x="252" y="263" width="65" height="37"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPn-tH-HXK">
+                                <rect key="frame" x="252" y="270" width="65" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="vMx-LO-cC2"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
                                 <size key="titleShadowOffset" width="0.0" height="1"/>
                                 <state key="normal" title="Close" backgroundImage="Button-Normal">
@@ -170,8 +176,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AcL-TO-bMl" secondAttribute="trailing" id="06d-dq-W7v"/>
                             <constraint firstAttribute="trailing" secondItem="AcL-TO-bMl" secondAttribute="trailing" id="1DS-0w-nrl"/>
                             <constraint firstItem="AcL-TO-bMl" firstAttribute="leading" secondItem="uVO-cv-Jw1" secondAttribute="leading" id="7T9-Ex-m3c"/>
+                            <constraint firstAttribute="centerX" secondItem="Inj-rE-xmg" secondAttribute="centerX" id="ACM-Il-Ugn"/>
+                            <constraint firstItem="AcL-TO-bMl" firstAttribute="leading" secondItem="uVO-cv-Jw1" secondAttribute="leading" id="ES7-13-Cwa"/>
+                            <constraint firstAttribute="centerX" secondItem="VPn-tH-HXK" secondAttribute="centerX" id="HGa-nF-jBg"/>
+                            <constraint firstItem="Inj-rE-xmg" firstAttribute="leading" secondItem="uVO-cv-Jw1" secondAttribute="leading" constant="66" id="JB2-8l-AI5"/>
+                            <constraint firstItem="Inj-rE-xmg" firstAttribute="top" secondItem="Gbb-52-AO9" secondAttribute="bottom" constant="20" id="Quh-63-83H"/>
+                            <constraint firstAttribute="centerX" secondItem="VPn-tH-HXK" secondAttribute="centerX" id="Rzt-fO-xWT"/>
+                            <constraint firstAttribute="trailing" secondItem="Inj-rE-xmg" secondAttribute="trailing" constant="65" id="f7J-FN-W2o"/>
+                            <constraint firstItem="VPn-tH-HXK" firstAttribute="top" secondItem="Inj-rE-xmg" secondAttribute="bottom" id="hoU-yc-TAf"/>
+                            <constraint firstItem="Inj-rE-xmg" firstAttribute="leading" secondItem="uVO-cv-Jw1" secondAttribute="leading" constant="20" id="pnL-9X-vDI"/>
+                            <constraint firstItem="QTb-Jt-0aF" firstAttribute="top" secondItem="VPn-tH-HXK" secondAttribute="bottom" constant="7" id="tja-DE-Zus"/>
+                            <constraint firstAttribute="trailing" secondItem="Inj-rE-xmg" secondAttribute="trailing" constant="20" id="yBD-5D-er0"/>
                         </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
