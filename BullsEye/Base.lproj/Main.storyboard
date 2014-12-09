@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-mG-KdJ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-mG-KdJ">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -94,18 +94,6 @@
                                     <segue destination="ldo-Kn-Hq3" kind="modal" modalTransitionStyle="flipHorizontal" id="9I3-U1-BUg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-1t-kTY">
-                                <rect key="frame" x="234" y="192" width="100" height="37"/>
-                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
-                                    <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNe-Kc-Ms6"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flS-kQ-bO8">
                                 <rect key="frame" x="64" y="280" width="32" height="32"/>
                                 <size key="titleShadowOffset" width="32" height="32"/>
@@ -116,8 +104,24 @@
                                     <action selector="startOver" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rrg-Bi-1ua"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0G-1t-kTY">
+                                <rect key="frame" x="234" y="199" width="100" height="37"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
+                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                <state key="normal" title="Hit Me!" backgroundImage="Button-Normal">
+                                    <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNe-Kc-Ms6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XNc-mG-KdJ" secondAttribute="trailing" id="8ff-lp-x5M"/>
+                            <constraint firstItem="XNc-mG-KdJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="nQy-jG-XWJ"/>
+                        </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
@@ -130,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="323.5"/>
+            <point key="canvasLocation" x="138" y="321"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="84H-xY-B7u">
@@ -144,9 +148,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-TO-bMl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="AcL-TO-bMl">
                                 <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                             </imageView>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-rE-xmg">
+                                <rect key="frame" x="66" y="15" width="437" height="235"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VPn-tH-HXK">
                                 <rect key="frame" x="252" y="263" width="65" height="37"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
@@ -159,12 +167,12 @@
                                     <action selector="close" destination="ldo-Kn-Hq3" eventType="touchUpInside" id="D6l-Na-f3d"/>
                                 </connections>
                             </button>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Inj-rE-xmg">
-                                <rect key="frame" x="66" y="15" width="437" height="235"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AcL-TO-bMl" secondAttribute="trailing" id="1DS-0w-nrl"/>
+                            <constraint firstItem="AcL-TO-bMl" firstAttribute="leading" secondItem="uVO-cv-Jw1" secondAttribute="leading" id="7T9-Ex-m3c"/>
+                        </constraints>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
@@ -173,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zfE-0c-ZO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="348"/>
+            <point key="canvasLocation" x="758" y="348"/>
         </scene>
     </scenes>
     <resources>
